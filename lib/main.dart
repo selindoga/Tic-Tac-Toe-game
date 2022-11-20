@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:getwidget/getwidget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -40,10 +41,24 @@ class _MyHomePageState extends State<MyHomePage> {
         decoration: const BoxDecoration(
             image: DecorationImage(image: AssetImage("Assets/base.png")),
         ),
-        //child: ElevatedButton(
-        //  onPressed: () {},
-        //  child: const Text("X"),
-        //),
+        alignment: Alignment.center,
+        child: ElevatedButton(
+            onPressed: () {},
+          style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.transparent,
+              shadowColor: Colors.transparent
+
+              //padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+             //textStyle: TextStyle(
+             //    fontSize: 30,
+             //    fontWeight: FontWeight.bold)
+          ),
+            child: const Text("",
+              style:TextStyle(
+                color: Colors.black,
+              )
+            ),
+        ),
       ),
     );
   }
